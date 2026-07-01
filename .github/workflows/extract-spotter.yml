@@ -21,9 +21,6 @@ jobs:
           echo "Unzipping mmmm.zip..."
           unzip mmmm.zip
           
-          echo "Deleting mmmm.zip..."
-          rm mmmm.zip
-
       - name: Commit and Push changes
         run: |
           git config --global user.name "github-actions[bot]"
