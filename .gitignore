@@ -1,0 +1,15 @@
+.gradle/
+build/
+app/build/
+local.properties
+.idea/
+*.iml
+.DS_Store
+
+# The pose landmarker .task model is NOT tracked here on purpose — it's a
+# multi-MB binary and you're pushing from mobile data. The CI workflow
+# (.github/workflows/build-apk.yml) downloads it directly on the runner if
+# it's missing from the repo, so you don't need to push it at all. If you'd
+# rather commit it (e.g. for offline/reproducible builds), just remove this
+# line and `git add -f` the file.
+app/src/main/assets/*.task
